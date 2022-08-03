@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Saucisson - Clicker</title>
+    <meta name="description" content="Page d'acceuil de notre jeu Saucisson Clicker">
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+</head>
+<body>
+    <section class="header">
+        <header>
+            <img src="./img/logo.png" alt="logo du jeu" class="logo">
+            <h1>Saucisson Clicker</h1>
+            <a href="#linkjeu"><button id="jouer" onclick="start_game()" type="button">Jouer !</button></a>
+        </header>
+    </section>
+
+    <section class="settings">
+        <div class="best-score">
+            <h2>Best Score :</h2>
+            <p id="best_score">0  /10s</p>
+        </div>
+
+        <div class="time-choose">
+            <h2>Choose Time :</h2>
+            <input type="text" id="time_choose" name="time" required minlength="1" maxlength="3">
+            <button id="btn_valider" onclick="change_time_setting()">Valider</button>
+        </div>
+    </section>
+
+    <section class="game">
+        <div class="skin">
+            <h2>Skin Select</h2>
+            <div class="skin-choose">
+                <button id="btn_skin_1" onclick="skin_selected_onclick(1)"><img src="./skins/skin01.png"></button>
+                <button id="btn_skin_2" onclick="skin_selected_onclick(2)"><img src="./skins/skin02.png"></button>
+                <button id="btn_skin_3" onclick="skin_selected_onclick(3)"><img src="./skins/skin03.png"></button>
+                <button id="btn_skin_4" onclick="skin_selected_onclick(4)"><img src="./skins/skin04.png"></button>
+                <button id="btn_skin_5" onclick="skin_selected_onclick(5)"><img src="./skins/skin05.png"></button>
+                <button id="btn_skin_6"><img src="./skins/skin06_secret.png"></button>
+            </div>
+        </div>
+
+        <div class="fenetre" id="linkjeu">
+            <button id="bouton_saucisson" class="saucisson_button"  onclick="saucisson_clique()"><img src="./skins/skin01.png" id="img_btn_saucisson" alt="Saucisson" style="height: 80px; width: 53px;" draggable="false"></button>
+        </div>
+
+        <div class="score">
+            <div class="count_score">
+                <h2>Score</h2>
+                <p id="score">0</p>
+            </div>
+
+            <div class="count_time">
+                <h2>Time</h2>
+                <p id="timer">0</p>
+            </div>
+        </div>
+    </sectoion>
+</body>
+</html>

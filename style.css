@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+}
+
+header h1{
+    font-family: 'Sigmar One', cursive;
+    font-size: 80px;
+}
+
+.logo{
+    width: 150px;
+}
+
+#jouer{
+    font-size: 50px;
+    border: 1;
+    border-width: 8px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border-color: black;
+    background: radial-gradient(white, #8b8b8b);
+}
+
+#jouer:hover{
+    transition: 0.5s;
+    background: radial-gradient( #8b8b8b, white);
+}
+
+/* Section Setting */
+.settings{
+    height: 200px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-around;
+}
+
+.settings div{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+
+    background-color: white;
+    width: 400px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.settings p{
+    margin-left: 30px;
+    font-size: xx-large;
+}
+
+.settings h2{
+    margin-left: 35px;
+}
+.settings input{
+    height: 20px;
+    margin-left: 10px;
+    width: 80px;
+    font-size: x-large;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#btn_valider{
+    margin : 10px;
+}
+
+/* Section Game */
+.game{
+    background-color: rgb(255, 255, 255);
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Fenetre Jeu */
+.fenetre{
+    background-image: url(./img/ciel.png);
+    border: 1;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 50px;
+    width: 650px;
+    height: 650px;
+}
+
+.saucisson_button{
+    background: none;
+    border: none;
+}
+.saucisson_button img{
+    width: 30%;
+}
+
+/* Fenêtre Skin */
+.skin{
+    width: 400px;
+    height: 650px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50px;
+    border-width: 50px;
+    border-color: black;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skin h2{
+    margin-top: 20px;
+    font-size: xx-large;
+    font-family: 'Sigmar One', cursive;
+}
+
+.skin img{
+    height: 115%;
+}
+
+.skin-choose button{
+    margin: 25px 10px;
+    padding: 5px 5px;
+    width: 150px;
+    background-color: white;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: #5c5c5c;
+    border-style:solid;
+}
+
+.skin-choose img{
+    width: 45%;
+}
+
+/* Fenêtre Score */
+
+.score{
+    width: 400px;
+    height: 650px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50px;
+    border-width: 50px;
+    border-color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.score h2{
+    font-size: xx-large;
+    font-family: 'Sigmar One', cursive;
+}
+
+.score p{
+    font-size: x-large;
+    padding-bottom: 15px;
+}
+.count_score{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.count_time{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/*Pour le prompt personnalisé*/
+.custom-box {
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    margin: auto;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
